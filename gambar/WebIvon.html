@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>web ivon</title>
+        <link rel="stylesheet" href= "style.css">
+    </head>
+    <body>
+    <div id="header">
+        <nav> 
+            <div class="navbar">
+                <label class="LOGO"><h1>ABOUT</h1></label>  
+                    <ul>
+                        <li><a rel="indexsheet" href="index.html" target="_blank">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sign Up</a> </li>       
+                        <li><a href="#" class="aktif">Tutors</a></li>
+                    </ul>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="header-text">
+            <h1>GXV <br><span>CAR</span>-354<br/>DRIFT</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam harum possimus quos officia adipisci, omnis expedita quam amet nesciunt itaque odit laborum velit? Inventore qui laborum hic neque dicta ab possimus veniam nostrum praesentium tenetur atque blanditiis aliquid veritatis, commodi doloremque odit animi architecto. Sed quis ipsum ut nam cupiditate?
+            </p>
+            <button>Dowload Now</button>
+            <div class="social media">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="content-image" id="bike"></div>
+        <div class="image-select">
+            <div id="image1"><img src="gambar/car1-removebg-preview.png"/></div>
+            <div id="image2"><img src="gambar/car2.png"/></div>
+            <div id="image3"><img src="gambar/car3.png"/></div>
+            <div id="image4"><img src="gambar/car4-removebg-preview.png"/></div>
+        </div>
+    </div>
+    <script>
+        let image1Btn = document.getElementById("image1");
+        let image2Btn = document.getElementById("image2");
+        let image3Btn = document.getElementById("image3");
+        let image4Btn = document.getElementById("image4");
+        let bike = document.getElementById("bike");
+
+       image1Btn.onclick = function () {
+        bike.style.backgroundImage = url(gambar/car1-removebg-preview.png);
+       };
+       image2Btn.onclick = function () {
+        bike.style.backgroundImage = url(gambar/car2.png);
+       };
+       image3Btn.onclick = function () {
+        bike.style.backgroundImage = url(gambar/car3.png);
+       };
+       image4Btn.onclick = function () {
+        bike.style.backgroundImage = url(gambar/car4-removebg-preview.png);
+       };
+    </script>
+    </body>
+</html>
